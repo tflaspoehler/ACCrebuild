@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<!-- base template -->
+
+{{standard_header_includes}} {{standard_footer_includes}}
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+
+
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>{{ content.html_title }} | Atlanta Convention Center</title>
+    <meta name="Description" content="{{ content.meta_description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" type="text/css" href="{{ get_public_template_url('custom/page/css/acc-normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="/hubfs/_fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="{{ get_public_template_url('custom/page/css/acc-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ get_public_template_url('custom/page/css/acc-owl.carousel.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ get_public_template_url('custom/page/css/acc-owl.theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ get_public_template_url('custom/page/css/acc-colorbox.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ get_public_template_url('custom/page/css/eventSearch.css') }}">
+
+
+</head>
+
+<body>
+
+
+
+    {% raw_html "www_html_body" label="HTML" value='', no_wrapper=True %}
+
+  
+  
+  
+  <div>
+    
+    <section>
+    
+
+        <p class="font-size-12">240 Peachtree Street NW, #2200, Atlanta, GA 30303-1327 1.800.ATL.MART  |  <a href="https://www.americasmart.com/terms-of-use" class="">Terms of Use</a>  |  <a href="https://www.americasmart.com/privacy-policy" class="">Privacy Policy</a>  |  &copy; <span class="year"></span> International Market Centers</p>
+    
+    </section>
+  </div>
+
+    
+    <!--<script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>-->
+    <script type="text/javascript" src="{{ get_public_template_url('custom/page/js/owl.carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ get_public_template_url('custom/page/js/acc-jquery.colorbox-min.js') }} "></script>
+    <script type="text/javascript" src="{{ get_public_template_url('custom/page/js/acc-jquery.tablesorter.js') }}"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js?hsDebug=true"></script>
+    <script type="text/javascript" src="{{ get_public_template_url('custom/page/js/eventSearch.js') }}"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSQj5_WSgsS4l6m00PAFDfSmbJ7T7XPTk&sensor=false"></script>
+    <script type="text/javascript" src="/hubfs/_js/acc-app.js"></script>
+    <script type="text/javascript" src="/hubfs/_js/acc-floorplan_data2.js"></script>
+    <script type="text/javascript" src="/hubfs/_js/acc-floorplans23.js"></script>
+    
+    <style>
+        #map-canvas div div div div:nth-child(3) {
+            cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default !important;
+        }
+    </style>
+    
+    
+    <!--
+    <script type="text/javascript" src="{{ get_public_template_url('custom/page/js/acc-app.js') }}"></script>
+    <script type="text/javascript" src="{{ get_public_template_url('custom/page/js/acc-floorplan_data.js') }}"></script>
+    <script type="text/javascript" src="{{ get_public_template_url('custom/page/js/acc-floorplans.js') }}"></script>
+    -->
+
+    <!-- Google Analytics: -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-4212529-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
